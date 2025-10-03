@@ -25,15 +25,14 @@ The codebase is **research-oriented**, emphasizing reproducibility, ablations (D
 ---
 
 ## ✨ Features
-- **Domain Penalization**: Dynamic loss balancing across anatomical domains, improving fairness & robustness.  
+- **Domain Penalization**: Dynamic loss balancing across anatomical domains, improving fairness & robustness. Balances underrepresented domains
 - **Domain-Adaptive ViT**: Extends ViT-Base with fixed or learnable domain embeddings.  
 - **Model Variants**:
   - **DAT-Fixed** → Main DAViT model with fixed embeddings  
   - **DAT-Learned** → Ablation with dynamic embeddings  
   - **ViT-Baseline** → Standard ViT without domain adaptation  
 - **Loss Functions**:  
-  - Focal Loss (γ=3) → Handles class imbalance  
-  - Domain penalization → Balances underrepresented domains  
+  - Focal Loss (γ=3) with class weights as α → mitigates severe class imbalance by penalizing under-represented classes (MEL, SCC) more strongly while down-weighting dominant classes (NV, UNK).
 - **Evaluation Metrics**: Accuracy, Balanced Accuracy, AUC, Sensitivity, Specificity, Dice coefficient, ROC curves, confusion matrices.  
 - **XAI Integration**: HiResCAM & LayerCAM for interpretability and clinical validation.  
 - **Dataset Curation**: Scripts for duplicate removal (PHash) and preprocessing.  
@@ -86,6 +85,10 @@ DAViT/
 ```bash
 python src/curated_dataset_creation.py
 ```
+
+📌 Public datasets:  
+- **[ISIC 2019+2020 (raw images, may contain duplicates)](https://www.kaggle.com/datasets/sushmethasr21bai1162/dataset-isic)**  
+- **[Curated CSV (use this to filter unique images only)](https://www.kaggle.com/datasets/sushmethasr21bai1162/csvfile?select=whole_data_no_duplicates_kaggle.csv)**  
 
 ### ⚙️ Installation
 # Clone the repo
