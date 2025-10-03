@@ -154,13 +154,13 @@ If you use this repository in your research, please cite:
 This project is licensed under the MIT License - see LICENSE for details.
 
 ## 🤝 Contributions
-Contributions are welcome!
-Open an issue for bugs or feature requests
-Submit pull requests for improvements
+- Contributions are welcome!
+- Open an issue for bugs or feature requests
+- Submit pull requests for improvements
 
 ## 📚 Acknowledgements
-Supported by the IndiaAI Fellowship (MeitY, Govt. of India)
-Thanks to the ISIC Archive, PyTorch, and TIMM communities
+- Supported by the IndiaAI Fellowship (MeitY, Govt. of India)
+- Thanks to the ISIC Archive, PyTorch, and TIMM communities
 
 ## 📬 Contact
 Sushmetha Sumathi Rajendran – GitHub: sushniaa
@@ -170,4 +170,4 @@ Kiranchandran H – GitHub: kiranchh08
  – 📧 kiranchandranh@gmail.com
 
 Vishal H - Github: vishalh25
- - 📧 vishal.harindrakumar@gmail.com
+ – 📧 vishal.harindrakumar@gmail.com
