@@ -140,11 +140,12 @@ Test set (5,731 images) after 18 epochs
 ## 📜 Citation
 If you use this repository in your research, please cite:
 ```bibtex
-@article{rajendran2025davit,
+@article{sushmetha2025davit,
   title={DAViT: A Generalized Deep Learning Framework for Robust Skin Lesion Multi-Classification with Domain Penalization},
-  author={Rajendran, Sushmetha Sumathi and H, Kiranchandran and H, Vishal and A, Sasithradevi and Seemakurthy, Karthik and Poornachari, Prakash and M, Vijayalakshmi},
+  author={Rajendran, Sushmetha Sumathi and Kiranchandran, H. and Vishal, H. and Sasithradevi, A. and Seemakurthy, Karthik and Poornachari, Prakash and Vijayalakshmi, M.},
   journal={*Under Review*},
-  year={2025}
+  year={2025},
+  note={Manuscript under submission to journals}
 }
 ```
 
@@ -170,4 +171,3 @@ Kiranchandran H – GitHub: kiranchh08
 
 Vishal H - Github: vishalh25
  - 📧 vishal.harindrakumar@gmail.com
-
