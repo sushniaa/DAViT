@@ -87,7 +87,7 @@ DAViT/
 python src/curated_dataset_creation.py
 ```
 
-## ⚙️ Installation
+### ⚙️ Installation
 # Clone the repo
 ```bash
 git clone https://github.com/<your-username>/DAViT.git
@@ -102,7 +102,7 @@ Requires Python 3.10+ and a GPU (e.g., Tesla P100).
 
 
 ## 🚀 Usage
-## Training
+# Training
 
 ```bash
 # Main DAViT (DAT-Fixed)
