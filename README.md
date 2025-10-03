@@ -42,6 +42,7 @@ The codebase is **research-oriented**, emphasizing reproducibility, ablations (D
 ---
 
 ## 📂 Repository Structure
+```bash
 DAViT/
 ├── README.md # Project overview
 ├── LICENSE # MIT License
@@ -71,7 +72,7 @@ DAViT/
 │ ├── train.py # Training script
 │ ├── utils.py # Helper utilities
 │ └── xai.py # HiResCAM, LayerCAM
-
+```
 
 ---
 
@@ -86,7 +87,7 @@ DAViT/
 python src/curated_dataset_creation.py
 ```
 
-⚙️ Installation
+## ⚙️ Installation
 # Clone the repo
 ```bash
 git clone https://github.com/<your-username>/DAViT.git
@@ -102,8 +103,9 @@ Requires Python 3.10+ and a GPU (e.g., Tesla P100).
 
 ## 🚀 Usage
 ## Training
-# Main DAViT (DAT-Fixed)
+
 ```bash
+# Main DAViT (DAT-Fixed)
 python src/train.py --model dat_fixed --csv csv/whole_data_no_duplicates_kaggle.csv --epochs 18 --lr 1e-4
 ```
 ```bash
@@ -127,21 +129,24 @@ python src/xai.py --model dat_fixed --checkpoint checkpoints/DAViT_BACC_NEW_18E_
 
 ## 📈 Results Summary
 Test set (5,731 images) after 18 epochs
-Model	Accuracy	AUC	Balanced Acc.	Sensitivity	Dice Coeff.	Test Loss
-DAViT (DAT-Fixed)	0.9044	0.9846	0.8209	0.8209	0.8335	0.3445
-DAT-Learned	0.8967	0.9833	0.8089	0.8089	0.8218	0.3565
-ViT-Baseline	0.9010	0.9819	0.8134	0.8134	0.8257	0.3578
+
+| Model | Accuracy | AUC | Balanced Acc. | Sensitivity | Dice Coeff. | Test Loss |
+|---|---|---|---|---|---|---|
+| **DAViT (DAT-Fixed)** | **0.9044** | **0.9846** | **0.8209** | **0.8209** | **0.8335** | **0.3445** |
+| DAT-Learned | 0.8967 | 0.9833 | 0.8089 | 0.8089 | 0.8218 | 0.3565 |
+| ViT-Baseline | 0.9010 | 0.9819 | 0.8134 | 0.8134 | 0.8257 | 0.3578 |
 
 
 ## 📜 Citation
 If you use this repository in your research, please cite:
-@article{2025davit,
+```bibtex
+@article{rajendran2025davit,
   title={DAViT: A Generalized Deep Learning Framework for Robust Skin Lesion Multi-Classification with Domain Penalization},
   author={Rajendran, Sushmetha Sumathi and H, Kiranchandran and H, Vishal and A, Sasithradevi and Seemakurthy, Karthik and Poornachari, Prakash and M, Vijayalakshmi},
   journal={*Under Review*},
   year={2025}
 }
-
+```
 
 ## 📄 License
 
@@ -163,7 +168,6 @@ Sushmetha Sumathi Rajendran – GitHub: sushniaa
 Kiranchandran H – GitHub: kiranchh08
  – 📧 kiranchandranh@gmail.com
 
-Vishal H - Github: 
+Vishal H - Github: vishalh25
  - 📧 vishal.harindrakumar@gmail.com
 
-Vishal H – 📧 vishal.harindrakumar@gmail.com
