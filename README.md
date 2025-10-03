@@ -102,7 +102,7 @@ Requires Python 3.10+ and a GPU (e.g., Tesla P100).
 
 
 ## 🚀 Usage
-# Training
+## Training
 
 ```bash
 # Main DAViT (DAT-Fixed)
