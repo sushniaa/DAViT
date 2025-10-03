@@ -84,52 +84,58 @@ DAViT/
 ➡️ Download datasets from the **[ISIC Archive](https://www.isic-archive.com/)** and preprocess using:  
 ```bash
 python src/curated_dataset_creation.py
-```bash
+```
 
 ⚙️ Installation
 # Clone the repo
+```bash
 git clone https://github.com/<your-username>/DAViT.git
 cd DAViT
+```
 
 # Install dependencies
+```bash
 pip install -r requirements.txt
-
-
+```
 Requires Python 3.10+ and a GPU (e.g., Tesla P100).
 
-🚀 Usage
-Training
-# Main DAViT (DAT-Fixed)
-python src/train.py --model dat_fixed --csv csv/whole_data_no_duplicates_kaggle.csv --epochs 18 --lr 1e-4
 
+## 🚀 Usage
+## Training
+# Main DAViT (DAT-Fixed)
+```bash
+python src/train.py --model dat_fixed --csv csv/whole_data_no_duplicates_kaggle.csv --epochs 18 --lr 1e-4
+```
+```bash
 # Ablation: DAT-Learned
 python src/train.py --model dat_learned --csv csv/whole_data_no_duplicates_kaggle.csv --epochs 18 --lr 1e-4
-
+```
+```bash
 # Ablation: ViT-Baseline
 python src/train.py --model vit_baseline --csv csv/whole_data_no_duplicates_kaggle.csv --epochs 18 --lr 1e-4
+```
 
-Testing
+## Testing
+```bash
 python src/test.py --model dat_fixed --checkpoint checkpoints/DAViT_BACC_NEW_18E_BEST_MODEL.ckpt
+```
 
-XAI Analysis
+## XAI Analysis
+```bash
 python src/xai.py --model dat_fixed --checkpoint checkpoints/DAViT_BACC_NEW_18E_BEST_MODEL.ckpt --num_samples 5
+```
 
-📈 Results Summary
-
+## 📈 Results Summary
 Test set (5,731 images) after 18 epochs
-
 Model	Accuracy	AUC	Balanced Acc.	Sensitivity	Dice Coeff.	Test Loss
 DAViT (DAT-Fixed)	0.9044	0.9846	0.8209	0.8209	0.8335	0.3445
 DAT-Learned	0.8967	0.9833	0.8089	0.8089	0.8218	0.3565
 ViT-Baseline	0.9010	0.9819	0.8134	0.8134	0.8257	0.3578
 
-For per-class and per-domain metrics, see the paper or run evaluations.
 
-📜 Citation
-
+## 📜 Citation
 If you use this repository in your research, please cite:
-
-@article{rajendran2025davit,
+@article{2025davit,
   title={DAViT: A Generalized Deep Learning Framework for Robust Skin Lesion Multi-Classification with Domain Penalization},
   author={Rajendran, Sushmetha Sumathi and H, Kiranchandran and H, Vishal and A, Sasithradevi and Seemakurthy, Karthik and Poornachari, Prakash and M, Vijayalakshmi},
   journal={*Under Review*},
@@ -137,33 +143,27 @@ If you use this repository in your research, please cite:
 }
 
 
-✅ Update journal name, volume, pages, and DOI once accepted.
+## 📄 License
 
-📄 License
+This project is licensed under the MIT License - see LICENSE for details.
 
-This project is licensed under the MIT License - see LICENSE
- for details.
-
-🤝 Contributions
-
+## 🤝 Contributions
 Contributions are welcome!
-
 Open an issue for bugs or feature requests
-
 Submit pull requests for improvements
 
-📚 Acknowledgements
-
+## 📚 Acknowledgements
 Supported by the IndiaAI Fellowship (MeitY, Govt. of India)
-
 Thanks to the ISIC Archive, PyTorch, and TIMM communities
 
-📬 Contact
-
+## 📬 Contact
 Sushmetha Sumathi Rajendran – GitHub: sushniaa
  – 📧 sush7niaa@gmail.com
 
 Kiranchandran H – GitHub: kiranchh08
  – 📧 kiranchandranh@gmail.com
+
+Vishal H - Github: 
+ - 📧 vishal.harindrakumar@gmail.com
 
 Vishal H – 📧 vishal.harindrakumar@gmail.com
